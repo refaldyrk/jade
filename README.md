@@ -37,12 +37,12 @@ newTask := jade.NewTask(task)
 You can change the status of a task using the `setStatus` method:
 
 ```go
-newTask.setStatus(jade.StatusCompleted)
+newTask.SetStatus(jade.StatusCompleted)
 ```
 
 ### Listening for Task Status Changes
 
-You can listen for task status changes using the `StartListening` function:
+You can listen for task status changes using the `Listen` function:
 
 ```go
 listen := jade.Listen()
