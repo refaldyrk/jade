@@ -45,6 +45,7 @@ newTask.SetStatus(jade.StatusCompleted)
 You can listen for task status changes using the `Listen` function:
 
 ```go
+go jade.Init()
 listen := jade.Listen()
 go func() {
 	for t := range listen {
