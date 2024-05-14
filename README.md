@@ -34,7 +34,7 @@ newTask := jade.NewTask(task)
 
 ### Changing Task Status
 
-You can change the status of a task using the `setStatus` method:
+You can change the status of a task using the `SetStatus` method:
 
 ```go
 newTask.SetStatus(jade.StatusCompleted)
