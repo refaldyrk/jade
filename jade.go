@@ -78,6 +78,14 @@ func NewTask(task Task) Task {
 	return task
 }
 
+func NewTaskDefult(id int, name string) Task {
+	return Task{
+		Id:     id,
+		Name:   name,
+		Status: StatusPending,
+	}
+}
+
 // process is a Go function that continuously listens for tasks from the chanTask channel.
 // It uses a select statement to handle multiple channels.
 // When a task is received, it checks the status of the task using the GetStatus method.
