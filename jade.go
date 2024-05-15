@@ -78,7 +78,7 @@ func NewTask(task Task) Task {
 	return task
 }
 
-func NewTaskDefult(id int, name string) Task {
+func NewTaskDefault(id int, name string) Task {
 	task := Task{
 		Id:     id,
 		Name:   name,
