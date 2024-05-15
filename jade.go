@@ -79,11 +79,13 @@ func NewTask(task Task) Task {
 }
 
 func NewTaskDefult(id int, name string) Task {
-	return Task{
+	task := Task{
 		Id:     id,
 		Name:   name,
 		Status: StatusPending,
 	}
+
+	return NewTask(task)
 }
 
 // process is a Go function that continuously listens for tasks from the chanTask channel.
